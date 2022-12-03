@@ -1,0 +1,44 @@
+https://github.com/helm/helm/issues/9115. (helm insecure error) 
+
+https://github.com/helm/helm/issues/10975 (exec plugin: invalid apiVersion "client.authentication.k8s.io/v1alpha1") 
+
+curl -L https://git.io/get_helm.sh | bash -s -- --version v3.8.2 (For above error) 
+
+https://stackoverflow.com/questions/73871493/error-while-installing-mongodb-in-aws-eks-cluster-running-prebind-plugin-volu (mongodb pod pending error) 
+
+Kms Encryption Policy 
+
+
+{
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kms:CreateGrant",
+                "kms:ListGrants",
+                "kms:RevokeGrant"
+            ],
+            "Resource": "*",
+            "Condition": {
+                "Bool": {
+                    "kms:GrantIsForAWSResource": "true"
+                }
+            }
+        },
+        {
+            "Effect": "Allow",
+            "Action": [
+                "kms:Encrypt",
+                "kms:Decrypt",
+                "kms:ReEncrypt*",
+                "kms:GenerateDataKey*",
+                "kms:DescribeKey"
+            ],
+            "Resource": "*"
+        }
+    ]
+}
+
+
+
