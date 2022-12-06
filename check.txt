@@ -40,5 +40,7 @@ Kms Encryption Policy
     ]
 }
 
+if you want to run as a ec2-user in ssm
 
+sudo runuser -l ec2-user
 
